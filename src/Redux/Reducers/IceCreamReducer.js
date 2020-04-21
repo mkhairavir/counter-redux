@@ -1,4 +1,4 @@
-import {INCREMENT, DECREMENT} from '../Actions/IceCreamAction'
+import {INCREMENTIceCream, DECREMENTIceCream} from '../Actions/IceCreamAction'
 
 const stateAwal = {
     iceCream : 0
@@ -6,12 +6,12 @@ const stateAwal = {
 
 const iceCreamReducer = (state = stateAwal, action) => {
     switch(action.type) {
-        case INCREMENT:
+        case INCREMENTIceCream:
             return {
                 ...state,
                 iceCream: state.iceCream+1
           }
-        case DECREMENT:
+        case DECREMENTIceCream:
             return{
                 ...state,
                 iceCream: state.iceCream-1

@@ -1,4 +1,4 @@
-import {INCREMENT, DECREMENT} from '../Actions/CakesAction'
+import {INCREMENTCakes, DECREMENTCakes} from '../Actions/CakesAction'
 
 const stateAwal = {
     cakes : 0
@@ -6,12 +6,12 @@ const stateAwal = {
 
 const cakesReducer = (state = stateAwal, action) => {
     switch(action.type) {
-        case INCREMENT:
+        case INCREMENTCakes:
             return {
                 ...state,
                 cakes: state.cakes+1
           }
-        case DECREMENT:
+        case DECREMENTCakes:
             return{
                 ...state,
                 cakes: state.cakes-1

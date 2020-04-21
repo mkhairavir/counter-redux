@@ -8,6 +8,7 @@ const Home = (props) => {
             <h1>Home</h1>
             <h2>Jumlah Cake saat ini {props.cakes} </h2>
             <h2>Jumlah Ice cream saat ini: {props.iceCream} </h2>
+            <h2>Total item yang ada: {props.total}</h2>
         </div>
     )
 }
@@ -15,7 +16,8 @@ const Home = (props) => {
 const mapStateToProps = (props) => {
     return {
         iceCream: props.iceCreamReducer.iceCream,
-        cakes: props.cakesReducer.cakes
+        cakes: props.cakesReducer.cakes,
+        total : props.cakesReducer.cakes + props.iceCreamReducer.iceCream
     }
 }
 

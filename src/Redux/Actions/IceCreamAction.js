@@ -1,15 +1,15 @@
-export const INCREMENT = "INCREMENT";
-export const DECREMENT = "DECREMENT";
+export const INCREMENTIceCream = "INCREMENTIceCream";
+export const DECREMENTIceCream = "DECREMENTIceCream";
 
  export const addIceCream = () => {
     return{
-        type:INCREMENT
+        type:INCREMENTIceCream
     }
 }
 
 export const minusIceCream = () => {
     return{
-        type:DECREMENT
+        type:DECREMENTIceCream
     }
 }
 
